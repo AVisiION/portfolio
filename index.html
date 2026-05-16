@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsh Sarangi — IoT & Full-Stack Developer</title>
+  <meta name="description" content="Final-year Diploma student in Computer Engineering and IoT. Building real-time dashboards, embedded systems, and MERN stack applications from Rourkela, India." />
+  <meta property="og:title" content="Adarsh Sarangi — IoT & Full-Stack Developer" />
+  <meta property="og:description" content="IoT Engineer & MERN Stack Developer. ESP32 to React." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#00e5ff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">AS</div>
+      <div class="loader-track"><div class="loader-fill" id="loader-fill"></div></div>
+      <p class="loader-text mono">Initializing experience...</p>
+    </div>
+  </div>
+
+  <!-- Three.js Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Nav -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AS</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#projects" class="nav-item">Projects</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+      </ul>
+      <a href="mailto:adarshsarangi0@gmail.com" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-wrap">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          Available for Internship · 2025–2026
+        </div>
+        <h1 class="hero-name">
+          <span class="hn-line reveal-up">ADARSH</span>
+          <span class="hn-line accent reveal-up" style="--delay:0.1s">SARANGI</span>
+        </h1>
+        <p class="hero-role reveal-up" style="--delay:0.2s">
+          IoT Engineer <span class="role-sep">/</span> MERN Stack Developer
+        </p>
+        <p class="hero-desc reveal-up" style="--delay:0.3s">
+          From embedded C on ESP32 to React dashboards that make sensor data beautiful. Building the bridge between hardware and the web.
+        </p>
+        <div class="hero-actions reveal-up" style="--delay:0.4s">
+          <a href="#projects" class="btn-primary">
+            Explore Projects
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+          <a href="https://github.com/AVisiION" target="_blank" rel="noopener" class="btn-ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/adarsh-sarangi" target="_blank" rel="noopener" class="btn-ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+        <div class="hero-meta reveal-up" style="--delay:0.5s">
+          <span class="mono"><span class="accent-dim">loc://</span> Rourkela, Odisha, IN</span>
+          <span class="mono"><span class="accent-dim">edu://</span> UGIE · Diploma CSE & IoT</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="floating-card tilt-card" id="status-card">
+          <div class="fc-header">
+            <div class="fc-dots"><span></span><span></span><span></span></div>
+            <span class="fc-title mono">system_status.json</span>
+          </div>
+          <div class="fc-body mono">
+            <div class="json-line"><span class="jk">"status"</span><span class="jc">:</span> <span class="js">"active"</span><span class="live-dot"></span></div>
+            <div class="json-line"><span class="jk">"role"</span><span class="jc">:</span> <span class="js">"IoT + MERN Dev"</span></div>
+            <div class="json-line"><span class="jk">"stack"</span><span class="jc">:</span> <span class="jb">[</span></div>
+            <div class="json-line indent"><span class="js">"ESP32"</span><span class="jc">,</span></div>
+            <div class="json-line indent"><span class="js">"React"</span><span class="jc">,</span></div>
+            <div class="json-line indent"><span class="js">"Node.js"</span><span class="jc">,</span></div>
+            <div class="json-line indent"><span class="js">"MongoDB"</span></div>
+            <div class="json-line"><span class="jb">]</span></div>
+            <div class="json-line"><span class="jk">"open_to"</span><span class="jc">:</span> <span class="jbool">true</span></div>
+          </div>
+        </div>
+
+        <div class="floating-card mini tilt-card" id="mqtt-card">
+          <div class="mini-label mono">MQTT · Live Feed</div>
+          <div class="mini-feed">
+            <div class="feed-item" id="feed1"><span class="feed-dot"></span><span class="mono feed-text">sensor/temp → 24.3°C</span></div>
+            <div class="feed-item" id="feed2"><span class="feed-dot"></span><span class="mono feed-text">sensor/hum → 67%</span></div>
+            <div class="feed-item" id="feed3"><span class="feed-dot"></span><span class="mono feed-text">led/strip → #00E5FF</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span class="mono">scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal-section">
+          <p class="section-label mono">// about.me</p>
+          <h2 class="section-title">Connecting Hardware<br>to the <span class="accent">Web</span></h2>
+          <p class="about-desc">
+            Final-year Diploma student in Computer Engineering and IoT at UGIE, Rourkela. I write embedded C for microcontrollers and build full-stack dashboards that display that data live — the full stack from sensor to screen.
+          </p>
+          <p class="about-desc">
+            I've participated in the Skill India Web Development Competition (2025–2026) and collaborated on team-based IoT assignments. Currently seeking internship or entry-level roles in IoT or software development.
+          </p>
+          <div class="about-langs">
+            <span class="lang-pill">English</span>
+            <span class="lang-pill">Hindi</span>
+            <span class="lang-pill">Odia</span>
+          </div>
+        </div>
+
+        <div class="about-cards reveal-section" style="--delay:0.15s">
+          <div class="info-card tilt-card">
+            <div class="ic-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="ic-content">
+              <span class="ic-label">Current Education</span>
+              <strong>Diploma · CSE & IoT</strong>
+              <span class="ic-sub">UGIE, Rourkela · 2024–Present</span>
+            </div>
+          </div>
+          <div class="info-card tilt-card">
+            <div class="ic-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="ic-content">
+              <span class="ic-label">Location</span>
+              <strong>Rourkela, Odisha</strong>
+              <span class="ic-sub">India · +91-8480121536</span>
+            </div>
+          </div>
+          <div class="info-card tilt-card">
+            <div class="ic-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <div class="ic-content">
+              <span class="ic-label">Interests</span>
+              <strong>IoT · Full-Stack · CP</strong>
+              <span class="ic-sub">Home automation & dashboards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="section-label mono reveal-section">// projects.showcase</p>
+      <h2 class="section-title reveal-section" style="--delay:0.05s">Things I've <span class="accent">Built</span></h2>
+
+      <div class="bento-grid">
+        <!-- SproutSense — Wide -->
+        <div class="bento-card wide tilt-card reveal-section">
+          <div class="bc-accent-line"></div>
+          <div class="bc-top">
+            <div class="bc-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22V12M12 12C12 12 7 9 7 4a5 5 0 0110 0c0 5-5 8-5 8z"/><path d="M5 22c0-3.5 3-5 7-5s7 1.5 7 5"/></svg>
+            </div>
+            <div>
+              <h3 class="bc-title">SproutSense</h3>
+              <p class="bc-subtitle mono">IoT Environmental Monitor</p>
+            </div>
+            <a href="https://github.com/AVisiION/SproutSense" target="_blank" rel="noopener" class="bc-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+          <p class="bc-desc">IoT-based environmental monitor using sensors and embedded C for reliable data collection. Connected microcontroller data to a MERN-powered dashboard for real-time visualization and control.</p>
+          <div class="bc-tags">
+            <span class="tag">ESP32</span><span class="tag">Embedded C</span><span class="tag">MERN</span><span class="tag">MQTT</span><span class="tag">WebSocket</span><span class="tag">React</span>
+          </div>
+          <div class="bc-visual">
+            <div class="sensor-readout">
+              <div class="sr-item"><span class="sr-label mono">TEMP</span><span class="sr-value mono accent" id="temp-val">24.3°C</span></div>
+              <div class="sr-item"><span class="sr-label mono">HUM</span><span class="sr-value mono accent" id="hum-val">67%</span></div>
+              <div class="sr-item"><span class="sr-label mono">LIGHT</span><span class="sr-value mono accent" id="light-val">812 lx</span></div>
+              <div class="sr-bar-wrap"><div class="sr-bar" id="sr-bar"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- WS2812B — Narrow -->
+        <div class="bento-card narrow tilt-card reveal-section" style="--delay:0.1s">
+          <div class="bc-accent-line"></div>
+          <div class="bc-top">
+            <div class="bc-icon rgb-icon" id="rgb-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+            </div>
+            <div>
+              <h3 class="bc-title">WS2812B Dashboard</h3>
+              <p class="bc-subtitle mono">LED Control Panel</p>
+            </div>
+          </div>
+          <a href="https://github.com/AVisiION/Lights" target="_blank" rel="noopener" class="bc-link-block">
+            View on GitHub
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </a>
+          <p class="bc-desc">Web dashboard to control WS2812B LEDs remotely. Real-time updates between UI and hardware for smooth color and pattern changes with optimized request handling.</p>
+          <div class="bc-tags">
+            <span class="tag">JavaScript</span><span class="tag">WebSocket</span><span class="tag">REST API</span><span class="tag">ESP32</span>
+          </div>
+          <div class="rgb-swatch-row">
+            <div class="rgb-swatch" style="--c:#ff2d55"></div>
+            <div class="rgb-swatch" style="--c:#00e5ff"></div>
+            <div class="rgb-swatch" style="--c:#7fff00"></div>
+            <div class="rgb-swatch" style="--c:#ff9500"></div>
+            <div class="rgb-swatch" style="--c:#bf5af2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <p class="section-label mono reveal-section">// skills.manifest</p>
+      <h2 class="section-title reveal-section" style="--delay:0.05s">My <span class="accent">Toolkit</span></h2>
+      <div class="skills-grid">
+        <div class="skill-group tilt-card reveal-section">
+          <div class="sg-label mono">Programming</div>
+          <div class="sg-chips"><span class="chip">C</span><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span></div>
+        </div>
+        <div class="skill-group tilt-card reveal-section" style="--delay:0.05s">
+          <div class="sg-label mono">Frameworks</div>
+          <div class="sg-chips"><span class="chip">React</span><span class="chip">Node.js</span><span class="chip">Express</span><span class="chip">MongoDB</span><span class="chip">REST API</span></div>
+        </div>
+        <div class="skill-group tilt-card reveal-section" style="--delay:0.1s">
+          <div class="sg-label mono">Protocols</div>
+          <div class="sg-chips"><span class="chip accent-chip">MQTT</span><span class="chip accent-chip">HTTP</span><span class="chip accent-chip">WebSocket</span><span class="chip accent-chip">UART</span><span class="chip accent-chip">I2C</span><span class="chip accent-chip">SPI</span><span class="chip accent-chip">CoAP</span></div>
+        </div>
+        <div class="skill-group tilt-card reveal-section" style="--delay:0.15s">
+          <div class="sg-label mono">Hardware</div>
+          <div class="sg-chips"><span class="chip">ESP32</span><span class="chip">Arduino</span><span class="chip">PlatformIO</span><span class="chip">Arduino IDE</span></div>
+        </div>
+        <div class="skill-group tilt-card reveal-section" style="--delay:0.2s">
+          <div class="sg-label mono">Core CS</div>
+          <div class="sg-chips"><span class="chip">DSA</span><span class="chip">Problem Solving</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">VS Code</span></div>
+        </div>
+        <div class="skill-group tilt-card reveal-section" style="--delay:0.25s">
+          <div class="sg-label mono">Deployment</div>
+          <div class="sg-chips"><span class="chip">Netlify</span><span class="chip">Render</span><span class="chip">MongoDB Atlas</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Activities -->
+  <section id="activities" class="section">
+    <div class="container">
+      <p class="section-label mono reveal-section">// activities.log</p>
+      <h2 class="section-title reveal-section" style="--delay:0.05s">What I've <span class="accent">Done</span></h2>
+      <div class="timeline">
+        <div class="tl-item reveal-section">
+          <div class="tl-dot"></div>
+          <div class="tl-content tilt-card">
+            <span class="tl-date mono">2025–2026</span>
+            <h3>Skill India Web Dev Competition</h3>
+            <p>Participated at Bhubaneswar — built a functional web project in a competitive, timed setting.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal-section" style="--delay:0.1s">
+          <div class="tl-dot"></div>
+          <div class="tl-content tilt-card">
+            <span class="tl-date mono">2024–Present</span>
+            <h3>Team-Based Projects at UGIE</h3>
+            <p>Collaborated with classmates on IoT and web development labs — sensors, dashboards, and embedded systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-wrap reveal-section">
+        <p class="section-label mono">// contact.init()</p>
+        <h2 class="section-title">Let's <span class="accent">Connect</span></h2>
+        <p class="contact-desc">Open to internship and entry-level roles in IoT or software development. Drop me a message.</p>
+        <a href="mailto:adarshsarangi0@gmail.com" class="btn-primary large">
+          adarshsarangi0@gmail.com
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+        <div class="contact-links">
+          <a href="https://github.com/AVisiION" target="_blank" rel="noopener" class="contact-link">GitHub · AVisiION</a>
+          <a href="https://linkedin.com/in/adarsh-sarangi" target="_blank" rel="noopener" class="contact-link">LinkedIn · adarsh-sarangi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span class="mono footer-text">Built by Adarsh Sarangi · 2025</span>
+      <span class="mono footer-text accent-dim">Three.js · GSAP · Vanilla JS</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
